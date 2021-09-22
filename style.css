@@ -1,0 +1,99 @@
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-white: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-heading: hsla(0, 0%, 100%, 0.6);
+  }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-background);
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--main-white);
+}
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--main-white);
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-paragraph);
+  font-weight: 300;
+}
+
+.paragraph {
+  font-size: 1rem;
+  margin-top: 5%;
+}
+.stat-text {
+  font-size: 0.8rem;
+  margin-top: 3%;
+}
+
+li {
+  display: flex;
+  margin-top: 20%;
+  margin-bottom: 2rem;
+  grid-gap: 3rem;
+  flex-flow: row wrap;
+}
+
+.text {
+  background-color: var(--card-background);
+  padding: 40px;
+
+}
+.project-image {
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+.image {
+  background-color: var(--accent);
+
+}
+
+#insights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: rgb(175 175 216) 6px 6px 14px -10px;
+  overflow: hidden;
+}
+
+@media (max-width: 740px) {
+  .text {
+    text-align: center;
+  }
+  li {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #insights {
+
+  }
