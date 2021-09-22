@@ -41,7 +41,7 @@ p {
 
 .paragraph {
   font-size: 1rem;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 .stat-text {
   font-size: 0.8rem;
@@ -63,15 +63,18 @@ li {
 
 }
 .project-image {
-  opacity: 0.5;
+  opacity: 0.6;
   height: 100%;
   width: 100%;
   object-fit: cover;
-
+}
+.image:hover {
+  background: none;
+  transition: all 0.3s linear;
 }
 .image {
-  background-color: var(--accent);
   width: 400px;
+  background: var(--accent);
 
 }
 
