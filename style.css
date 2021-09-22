@@ -69,7 +69,7 @@ li {
   object-fit: cover;
 }
 .image:hover {
-  background: none;
+  background: orange;
   transition: all 0.3s linear;
 }
 .image {
